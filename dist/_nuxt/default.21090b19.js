@@ -1,0 +1,1 @@
+/* empty css             */import{a as t,o as a,b as s,i as n,e as l,r as c,f as r,j as _}from"./entry.3dd0d7b2.js";const d={id:"layout",class:"flex flex-col"},m={class:"flex-grow"},f=r(" default layout "),h=t({__name:"default",setup(i){return(e,p)=>{const o=_("Html");return a(),s("div",d,[n(o,{lang:"en"}),l("main",m,[f,c(e.$slots,"default")])])}}});export{h as default};
