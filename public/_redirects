@@ -1,0 +1,17 @@
+# Don't modify
+
+# serve static meta images and other required without country check
+/img/* /.netlify/functions/server 200
+/favicon.ico /.netlify/functions/server 200
+/favicon.png /.netlify/functions/server 200
+/icon.png /.netlify/functions/server 200
+/robots.txt /.netlify/functions/server 200
+
+# 1. Serve blocked page with redirected page meta tags
+/blocked /.netlify/functions/server 200 Country=us
+
+# 2. Redirect users from US to blocked page
+/*  /blocked?url=:splat  301 Country=us
+
+# 3. Serve app with nuxt server
+/* /.netlify/functions/server 200
